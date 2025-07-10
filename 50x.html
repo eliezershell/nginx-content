@@ -1,19 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<title>Error</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Erro 404</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
+      color: #fff;
+    }
+    .container {
+      text-align: center;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+    }
+    h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 3.5rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 1rem;
+      color: #ff4e50;
+      background: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background: #ff4e50;
+      color: #fff;
+      transform: scale(1.1);
+    }
+  </style>
 </head>
 <body>
-<h1>An error occurred.</h1>
-<p>Sorry, the page you are looking for is currently unavailable.<br/>
-Please try again later.</p>
-<p>If you are the system administrator of this resource then you should check
-the error log for details.</p>
-<p><em>Faithfully yours, nginx.</em></p>
+  <div class="container">
+    <h1>Erro 404</h1>
+    <p>Página não encontrada ou removida.</p>
+    <button class="button" onclick="window.history.back()">Voltar</button>
+  </div>
 </body>
 </html>
